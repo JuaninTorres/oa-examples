@@ -1,0 +1,12 @@
+{
+  "name": "Interfaz hecha con bootstrap",
+  "dependencies": {
+    "jquery": "~1.*",
+    "bootstrap": "~3.3.*",
+    "respond":"~1.4.*",
+    "html5shiv": "~3.*",
+    "modernizr": "~2.*",
+    "fontawesome": "~4.*",
+    "sweetalert": "~1.*"
+  }
+}
