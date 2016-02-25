@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/sweetalert/dist/sweetalert.css">
     <link rel="stylesheet" href="css/app.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and mçedia queries -->
     <!--[if lt IE 9]>
     <script src="vendor/html5shiv/dist/html5shiv.min.js"></script>
     <script src="vendor/respond/dest/respond.min.js"></script>
@@ -34,23 +34,206 @@
                 <a class="navbar-brand" href="#">Demo OA - UGCC</a>
             </div>
             <!--<div id="navbar" class="navbar-collapse collapse">-->
-            <!--<ul class="nav navbar-nav">-->
-            <!--<li class="active"><a href="#">Home</a></li>-->
-            <!--<li><a href="#about">About</a></li>-->
-            <!--<li><a href="#contact">Contact</a></li>-->
-            <!--<li class="dropdown">-->
-            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sub menus <span class="caret"></span></a>-->
-            <!--<ul class="dropdown-menu">-->
-            <!--<li><a href="#">Item</a></li>-->
-            <!--</ul>-->
-            <!--</li>-->
-            <!--</ul>-->
+                <!--<ul class="nav navbar-nav">-->
+                    <!--<li class="active"><a href="#">Home</a></li>-->
+                    <!--<li><a href="#about">About</a></li>-->
+                    <!--<li><a href="#contact">Contact</a></li>-->
+                    <!--<li class="dropdown">-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sub menus <span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li><a href="#">Item</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                <!--</ul>-->
             <!--</div>-->
             <!--/.nav-collapse -->
         </div>
     </nav>
 
     <div class="container" role="main">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn-group button-toolbar" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default"><i class="fa fa-file-pdf-o"></i> Carta de Derivación</button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-exclamation-circle"></i> Derivación Nula</button>
+                    <button type="button" class="btn btn-default">Derivación Erronea</button>
+                    <button type="button" class="btn btn-default" data-confirm="Cerrar caso" data-confirm-text="¿Está seguro de querer cerrar el caso?">Cerrar caso</button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-paper-plane"></i> Reenviar correos</button>
+                </div>
+            </div>
+        </div> <!-- Botonera -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Bitacora</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Usuarios</th>
+                                    <th>Desde</th>
+                                    <th>Hacia</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12:34:12 / 24-02-2016</td>
+                                    <td>Juanfri</td>
+                                    <td></td>
+                                    <td>En curso</td>
+                                </tr>
+                                <tr>
+                                    <td>12:34:12 / 24-02-2016</td>
+                                    <td>Alex</td>
+                                    <td></td>
+                                    <td>En curso</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>12:34:12 / 24-02-2016</td>
+                                    <td>Juan</td>
+                                    <td></td>
+                                    <td>Exitosa</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                	  </div>
+                </div>
+            </div>
+        </div><!-- Tabla Bitacora -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-info">
+                	  <div class="panel-heading">
+                			<h3 class="panel-title">Bitacora Derivación</h3>
+                	  </div>
+                	  <div class="panel-body">
+                          <div class="col-md-6">
+                            <dl class="dl-horizontal">
+                                <dt>Id Derivación</dt>
+                                <dd>234234234</dd>
+                                <dt>Creador</dt>
+                                <dd>Juanfri</dd>
+                                <dt>Fecha de Creación</dt>
+                                <dd>18:30 del dia 24-02-2016</dd>
+                            </dl>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-horizontal" >
+                                <div class="form-group">
+                                    <label for="cama_encontrada" class="control-label col-sm-4">Cama Encontrada</label>
+                                    <div class="col-sm-4">
+                                        <input id="cama_encontrada" name="cama_encontrada" type="date" class="form-control" value="2016-02-01"/>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <select name="" class="form-control">
+                                            <option value="">0</option>
+                                            <option value="">15</option>
+                                            <option value="">30</option>
+                                            <option value="">45</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipo_compra" class="control-label col-sm-4">Tipo de Compra</label>
+                                    <div class="col-sm-8">
+                                        <select name="tipo_compra" id="tipo_compra" class="form-control">
+                                            <option value="">Publico</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipo_egreso" class="control-label col-sm-4">Tipo de Egreso</label>
+                                    <div class="col-sm-8">
+                                        <select readonly disabled name="tipo_egreso" id="tipo_egreso" class="form-control">
+                                            <option value="">Seleccione...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-4">Convenio</label>
+                                    <div class="col-sm-8">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn btn-default ">
+                                                <input type="radio" name="convenio_options" id="convenio_option1" autocomplete="off">
+                                                Si
+                                            </label>
+                                            <label class="btn btn-default active">
+                                                <input type="radio" name="convenio_options" id="convenio_option2" autocomplete="off" checked>
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-sm-4">Caso Especial</label>
+                                    <div class="col-sm-8">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn btn-default">
+                                                <input type="checkbox" autocomplete="off"> ECMO
+                                            </label>
+                                            <label class="btn btn-default">
+                                                <input type="checkbox" autocomplete="off"> Asistencia Ventricular
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                	  </div>
+                </div>
+            </div>
+        </div><!-- Bitacora de derivación -->
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                	  <div class="panel-heading">
+                			<h3 class="panel-title">Datos de la llamada</h3>
+                	  </div>
+                	  <div class="panel-body">
+                			<div class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="responsable_llamada" class="control-label col-sm-4">Responsable llamada</label>
+                                    <div class="col-sm-8">
+                                        <input id="responsable_llamada" name="responsable_llamada" type="text" class="form-control" value=""/>
+                                    </div>
+                                </div>
+                            </div>
+                	  </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                	  <div class="panel-heading">
+                			<h3 class="panel-title">Datos de Origen</h3>
+                	  </div>
+                	  <div class="panel-body">
+                          <div class="form-horizontal">
+                              <div class="form-group">
+                                  <label for="nombre_medico" class="control-label col-sm-4">Nombre Medico</label>
+                                  <div class="col-sm-8">
+                                      <input id="nombre_medico" name="nombre_medico" type="text" class="form-control" value="Chapatin"/>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                	  </div>
+                </div>
+        </div>
 
 
     </div> <!--Fin Container-->
